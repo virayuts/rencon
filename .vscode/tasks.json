@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "cmd.exe",
+                "args": [
+                    "/C",
+                    "\"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Auxiliary/Build/vcvars64.bat\"",
+                    "&&"
+                ]
+            }
+        }
+    },
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C: cl.exe build debug",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/Wall",
+                "/std:c17",
+                "/Fe:",
+                "${workspaceFolder}/target/debug/rencon.exe",
+                "/Fd:",
+                "${workspaceFolder}/target/debug/",
+                "/Fo:",
+                "${workspaceFolder}/target/debug/",
+                "${workspaceFolder}/src/*.c"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
