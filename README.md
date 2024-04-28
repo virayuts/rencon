@@ -1,4 +1,4 @@
-# rencon
+# Console Renderer (rencon)
 
 ## Description
 

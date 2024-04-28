@@ -2,6 +2,6 @@
 #include "log.h"
 
 int main(void) {
-    log("Console Renderer\n");
+    logf("Console Renderer\n");
     return 0;
 }
