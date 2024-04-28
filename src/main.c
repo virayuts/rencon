@@ -1,9 +1,7 @@
-#include <stdio.h>
 #include "define.h"
+#include "log.h"
 
 int main(void) {
-    printf("Console Renderer\n");
-    i32 a = 20;
-    printf("%d\n", a);
+    log("Console Renderer\n");
     return 0;
 }
