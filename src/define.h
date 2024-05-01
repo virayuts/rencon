@@ -7,7 +7,7 @@
 
 // Boolean
 typedef bool b8;
-static_assert(sizeof(b8) == 1, "size of i8 must be 1 byte");
+static_assert(sizeof(b8) == 1, "size of b8 must be 1 byte");
 
 // Integer
 typedef int8_t i8;
